@@ -1,0 +1,15 @@
+{
+  "name": "taskmate-full-stack",
+  "version": "1.0.0",
+  "description": "TaskMate - Task Management System (Full Stack)",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd \"project_frontend (2)\" && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:all": "npm install && cd backend && npm install && cd ../\"project_frontend (2)\" && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
